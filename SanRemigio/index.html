@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main {
+   width: 100%;
+   background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(1.jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   height: 300vh;
+}
+.navbar{
+   display: flex;
+   position: fixed;
+   height: 80px;
+   width: 100%;
+   background: #1b1b1b;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 50px 0 100px;
+   flex-wrap: wrap;
+   z-index: 2;
+}
+.navbar .logo{
+   color: #fff;
+   font-size: 35px;
+   font-weight: 600;
+}
+.navbar ul{
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+}
+.navbar ul li{
+   margin: 0 5px;
+}
+.navbar ul li a{
+   color: #f2f2f2;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 500;
+   padding: 8px 15px;
+   border-radius: 5px;
+   letter-spacing: 1px;
+   transition: all 0.3s ease;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+   color: #111;
+   background: #fff;
+}
+.content{
+   position: relative;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   z-index: 1;
+   width: 100%;
+   padding: 0 30px;
+   margin-bottom: 25px;
+   color: #111;
+}
+.flag{
+   font-size: 40px;
+   font-weight: 700;
+}
+.subflag {
+   font-size: 27px;
+   font-weight: 400;
+}
+#about {
+   background: linear-gradient(to top, rgba(136, 136, 136, 0.25)50%, rgba(136, 136, 136, 0.25)50%);
+   border-radius: 5px;
+   font-size: 125%;
+   font-weight: 50;
+   margin: 5%;
+   padding: 5px;
+   line-height: 150%;
+   text-align: justify;
+}
+.card {
+   transition: 0.3s;
+   border-radius: 5px;
+   padding: 16px 16px;
+   margin: 10px;
+}
+.brg  {
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%, 0);
+   border: 3px, hidden;
+   padding: 20px;
+   margin: 50px;
+   display: block;
+   max-width: 100%;
+   position: relative;
+   overflow: hidden;
+   float: left;
+   justify-content: center;
+}
+.brg ul{
+   display: flex;
+   list-style-type: none;
+}
+.brg ul li{
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   margin: 100px 6px;
+   display:block; 
+   z-index:998; 
+   cursor: pointer; 
+   -webkit-transition-property: all; 
+   -webkit-transition-duration: 0.3s; 
+   -webkit-transition-timing-function: ease;
+}
+
+img{
+   overflow: hidden;
+   position: relative;
+   width: 15vw;
+   height: 50vh;
+   border-radius: 10px 10px 0 0;
+}
+.brg ul li:hover  {
+   transform: scale(2);
+   z-index: 999;
+   height: auto;
+   gap: 10rem;
+   border-radius: 5px;
+}
+.brg h4{
+   height: auto;
+   font-size: 150%;
+}
+.brg .flag {
+   margin-top: 50px;
+}
+      </style>
+   </head>
+   <body>
+      <div class="main">
+      <div class="navbar">
+         <div class="logo">
+            Brand
+         </div>
+         <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Locale</a></li>
+            <li><a href="#">Tourism</a></li>
+         </ul>
+      </div>
+      <div class="content">
+         <div class="flag">
+            San Remigio
+         </div>
+         <div class="subflag">
+            Summer Capital of Antique
+         </div>
+         <p id="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis turpis et sapien ultrices cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris leo mi, venenatis ac erat id, varius feugiat elit. Praesent dignissim aliquam placerat. Morbi ut imperdiet sapien. Sed eget interdum massa, ac porta quam. Quisque et venenatis mi. Nulla tristique sapien sit amet quam mollis ullamcorper non vitae nunc. Duis quis sapien ac nibh elementum mollis vel non libero. Aliquam pulvinar tellus sed elit maximus volutpat. Aenean non scelerisque lacus. Proin maximus neque vitae felis finibus volutpat. Curabitur luctus vehicula leo, euismod rutrum purus dapibus tempus. Cras turpis erat, elementum ut porttitor non, pellentesque et sem. Aliquam volutpat luctus quam ac luctus. Donec eu pharetra est. Praesent a orci id enim volutpat viverra. Sed sagittis, risus tempus congue ornare, enim sapien convallis nulla, nec aliquam eros urna quis sem. Nullam pulvinar scelerisque diam, in consequat purus feugiat ut. Mauris eros lorem, fermentum et nunc a, congue feugiat lacus. Vestibulum mi nunc, faucibus a sem vel, mattis congue mauris. Quisque eget est at dui ullamcorper dictum ac sit amet arcu. Nulla porta ullamcorper dapibus. Vestibulum lectus odio, ornare at lectus et, auctor tristique lacus. Nulla lobortis suscipit nisi in aliquam. Mauris vel metus at magna dictum commodo. Curabitur sodales sapien non varius laoreet. Integer porta mauris sed faucibus tincidunt. Quisque tincidunt id massa ut luctus. Nulla facilisi. Nam commodo nisl ut leo consequat hendrerit. Vestibulum dictum dolor in scelerisque vehicula. Suspendisse potenti. Sed accumsan arcu enim, a dictum justo tincidunt eget. In libero augue, congue id feugiat vitae, volutpat dapibus arcu. Suspendisse finibus, dolor in dictum dictum, odio ante porta orci, sit amet iaculis turpis sem ut nisl. Proin lacinia lectus quis ultrices condimentum. Fusce scelerisque orci laoreet eros tincidunt posuere. Curabitur cursus magna justo, id scelerisque libero tristique sed. Phasellus lobortis tempor ligula ut pellentesque. Praesent venenatis, sem sed vestibulum ornare, ex enim pulvinar erat, ut consequat nibh lectus at felis. Suspendisse vehicula scelerisque orci, quis tempus nisl dictum vel. Sed vitae lectus id libero cursus consectetur. Suspendisse et varius ante. Fusce aliquam odio luctus, vulputate odio et, cursus sapien. Praesent et congue dolor, et facilisis ex. Morbi in dui nec nisl venenatis auctor sed vel augue. Pellentesque efficitur metus non volutpat venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In dictum, lorem eget congue volutpat, justo odio laoreet ipsum, non placerat felis nibh ut urna. In mollis turpis in lobortis bibendum. Fusce sed iaculis augue. Quisque dapibus metus dui. Cras dapibus, ipsum eget pellentesque molestie, lorem turpis volutpat diam, at interdum lectus mauris ut nisl. Vestibulum pharetra arcu sed magna dignissim rutrum. Sed mollis, turpis ut pellentesque gravida, lacus est dignissim ante, at rhoncus nibh ante euismod diam. Sed vel sem cursus, ultricies nulla vitae, dignissim lacus. Duis congue viverra elementum.</p>
+         <div class="card">
+            <hr>
+            <div class="brg">
+               <div class="flag">
+                  Locale
+               </div>
+               <ul>
+                  <li><a href="#"><img src="locale.jpg" alt="Poblacion"></a><h4><b>Poblacion</b></h4></li>
+                  <li><a href="#"><img src="locale.jpg" alt="La Union"></a><h4><b>La Union</b></h4></li>
+                  <li><a href="#"><img src="locale.jpg" alt="Aningalan"></a><h4><b>Aningalan</b></h4></li>
+                  <li><a href="#"><img src="locale.jpg" alt="Iguirindon"></a><h4><b>Iguirindon</b></h4></li>
+                  <li><a href="#"><img src="locale.jpg" alt="Tubudan"></a><h4><b>Tubudan</b></h4></li>
+               </ul>
+            </div>
+         </div>
+         <div class="brg">
+            <hr>
+            <div class="flag">
+               Landmarks
+            </div>
+            <ul>
+               <li><a href="#"><img src="landmark.jpg"></a><h4><b>Landmark #1</b></h4></li>
+               <li><a href="#"><img src="landmark.jpg"></a><h4><b>Landmark #2</b></h4></li>
+               <li><a href="#"><img src="landmark.jpg"></a><h4><b>Landmark #3</b></h4></li>
+               <li><a href="#"><img src="landmark.jpg"></a><h4><b>Landmark #4</b></h4></li>
+               <li><a href="#"><img src="landmark.jpg"></a><h4><b>Landmark #5</b></h4></li>
+            </ul>
+         </div>
+      </div>
+   </body>
+</html>
